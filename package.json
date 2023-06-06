@@ -1,0 +1,41 @@
+{
+  "name": "chrome-extension-boilerplate",
+  "version": "0.0.1",
+  "description": "simple minimalistic fast chrome extension boilerplate",
+  "scripts": {
+    "build": "ts-node build/bin/build",
+    "watch": "ts-node build/bin/watch"
+  },
+  "author": "OliaYesss",
+  "license": "ISC",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "@types/chrome": "^0.0.237",
+    "@types/react-dom": "^18.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.7",
+    "redux": "^4.2.1",
+    "styled-components": "^6.0.0-rc.3",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.1.3"
+  },
+  "devDependencies": {
+    "@jgoz/esbuild-plugin-typecheck": "^3.0.2",
+    "@types/lodash.debounce": "^4.0.7",
+    "@types/node": "^20.2.5",
+    "@types/ws": "^8.5.4",
+    "chokidar": "^3.5.3",
+    "esbuild": "^0.17.19",
+    "esbuild-plugin-copy-watch": "^2.0.0",
+    "eslint": "^8.42.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "lodash.debounce": "^4.0.8",
+    "node-color-log": "^10.0.2",
+    "ts-node": "^10.9.1",
+    "ws": "^8.13.0"
+  }
+}

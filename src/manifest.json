@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "version": "0.0.1",
+  "name": "Chrome extension boilerplate",
+  "description": "simple minimalistic fast chrome extension boilerplate",
+  "background": { "service_worker": "/src/bg.js" },
+  "action": {
+    "default_popup": "/pages/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*", "<all_urls>"],
+      "js": ["/src/cs.js"],
+      "css": []
+    }
+  ],
+  "permissions": []
+}
