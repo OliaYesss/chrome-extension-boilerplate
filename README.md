@@ -2,9 +2,12 @@
 
 Ultra fast minimalistic Chrome Extensions boilerplate that help you set up your web extension faster!
 
-## Key Features
+## Key features:
+- Automatic extension releod on changes
+- Ultra fast build with `esbuild`
+- Sustainable render extension UI in `shadow DOM`
 
-Key features:
+## Whats inside?
 
 - [Chrome MV3](https://developer.chrome.com/docs/extensions/mv3/intro/mv3-overview/)
 - [Esbuild](https://esbuild.github.io/)
@@ -49,7 +52,25 @@ yarn build
 ```
 npm run watch
 
-# or 
+# or
 
 yarn watch
+```
+- Pretify your code using:
+
+```
+npm run prettier
+
+# or
+
+yarn prettier
+```
+- Check `eslint`:
+
+```
+npm run eslint
+
+# or
+
+yarn eslint
 ```

@@ -4,7 +4,9 @@
   "description": "simple minimalistic fast chrome extension boilerplate",
   "scripts": {
     "build": "ts-node build/bin/build",
-    "watch": "ts-node build/bin/watch"
+    "watch": "ts-node build/bin/watch",
+    "prettier": "npx prettier ./src ./build --write",
+    "eslint": "npx eslint ./src ./build"
   },
   "author": "OliaYesss",
   "license": "ISC",

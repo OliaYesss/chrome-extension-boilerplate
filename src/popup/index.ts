@@ -1,4 +1,4 @@
-import { MessageDestination, MessageType } from "shared/messages"
+import { MessageDestination, MessageType } from 'shared/messages'
 
 chrome.runtime.sendMessage(
   {
@@ -7,4 +7,3 @@ chrome.runtime.sendMessage(
   },
   () => window.close()
 )
-

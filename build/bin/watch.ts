@@ -1,3 +1,3 @@
-import { getBuildContext } from "../esbuild";
+import { getBuildContext } from '../esbuild'
 
-getBuildContext(false).then(ctx => ctx.watch())
+getBuildContext(false).then((ctx) => ctx.watch())

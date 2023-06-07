@@ -7,8 +7,9 @@ import { extReleoadPlugin } from './plugins/extReload/plugin'
 import { Config } from './utils/config'
 import { initialCleanPlugin } from './plugins/initialClean'
 
-
-export function getBuildContext(isProd: boolean): Promise<esbuild.BuildContext> {
+export function getBuildContext(
+  isProd: boolean
+): Promise<esbuild.BuildContext> {
   return esbuild.context({
     entryPoints: {
       bg: Config.Paths.Src.BG,
@@ -42,17 +43,15 @@ export function getBuildContext(isProd: boolean): Promise<esbuild.BuildContext> 
         watch: true,
         logger
       }),
-      extReleoadPlugin(Config.Paths.DIST),
+      extReleoadPlugin(Config.Paths.DIST)
     ],
-    ...(
-      isProd
+    ...(isProd
       ? {
-        minify: true,
-        treeShaking: true,
-      } 
+          minify: true,
+          treeShaking: true
+        }
       : {
-        sourcemap: 'both',
-      }
-    )
+          sourcemap: 'both'
+        })
   })
 }

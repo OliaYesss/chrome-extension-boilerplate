@@ -3,8 +3,8 @@ import { logger } from '../utils/logger'
 
 export const loggerPlugin: esbuild.Plugin = {
   name: 'pluging:logger',
-  
-  setup: build => {
+
+  setup: (build) => {
     build.onStart(() => {
       logger.debug('build started')
     })
