@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "version": "0.0.1",
+  "version": "0.0.0",
   "name": "Chrome extension boilerplate",
   "description": "simple minimalistic fast chrome extension boilerplate",
   "background": { "service_worker": "/src/bg.js" },

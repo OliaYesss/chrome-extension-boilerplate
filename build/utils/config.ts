@@ -3,6 +3,10 @@ import * as path from 'path'
 export namespace Config {
   export namespace Env {
     export const EXT_RELOAD_PORT = Number(process.env.EXT_RELOAD_PORT ?? 6565)
+
+    export const MAJOR_VERSION = process.env.MAJOR_VERSION ?? '0'
+    export const MINOR_VERSION = process.env.MINOR_VERSION ?? '0'
+    export const PATCH_VERSION = process.env.PATCH_VERSION ?? '0'
   }
 
   export namespace Paths {
@@ -25,5 +29,7 @@ export namespace Config {
       export const PAGES = path.join(DIST, 'pages')
       export const MANIFEST = path.join(DIST, path.basename(Src.MANIFEST))
     }
+
+    export const PACKAGE = path.join(ROOT, 'package')
   }
 }

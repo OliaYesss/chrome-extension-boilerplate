@@ -4,6 +4,7 @@
   "description": "simple minimalistic fast chrome extension boilerplate",
   "scripts": {
     "build": "ts-node build/bin/build",
+    "package": "ts-node build/bin/package",
     "watch": "ts-node build/bin/watch",
     "prettier": "npx prettier ./src ./build --write",
     "eslint": "npx eslint ./src ./build"
@@ -38,6 +39,7 @@
     "lodash.debounce": "^4.0.8",
     "node-color-log": "^10.0.2",
     "ts-node": "^10.9.1",
-    "ws": "^8.13.0"
+    "ws": "^8.13.0",
+    "zip-a-folder": "^1.1.6"
   }
 }

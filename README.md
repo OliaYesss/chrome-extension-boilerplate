@@ -36,8 +36,7 @@ Ultra fast minimalistic Chrome Extensions boilerplate that help you set up your 
 8. Happy development!
 
 ## Commands
-
-- Build a package (produce mified and tree-shaked package):
+- Build a production extension:
 
 ```
 npm run build
@@ -45,6 +44,17 @@ npm run build
 # or
 
 yarn build
+```
+
+
+- Build a package:
+
+```
+npm run package
+
+# or
+
+yarn package
 ```
 
 - Run for development:
