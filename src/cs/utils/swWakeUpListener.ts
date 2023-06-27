@@ -1,4 +1,4 @@
-import { isIframe } from './commont'
+import { isIframe } from './common'
 
 export namespace SwWakeUpListener {
   const TIMEOUT = 2000
