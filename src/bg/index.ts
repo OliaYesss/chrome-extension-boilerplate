@@ -1,7 +1,7 @@
 import { MessageDestination } from 'shared/messages'
-import { reloadListener } from '../../build/plugins/extReload/listener'
+import { ExtReloadListener } from '../../build/plugins/extReload/listener'
 
-reloadListener()
+ExtReloadListener.init()
 
 chrome.runtime.onMessage.addListener((message, _sender, cb) => {
   cb()

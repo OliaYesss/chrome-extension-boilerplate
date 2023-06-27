@@ -3,8 +3,11 @@ import { createView } from './view/view'
 import { MessageType } from 'shared/messages'
 import { store } from './store/store'
 import { popupSlice } from './store/popupSlice'
+import { SwWakeUpListener } from './utils/swWakeUpListener'
 
-chrome.runtime.onMessage.addListener((message: Message, sender, cb) => {
+SwWakeUpListener.init()
+
+chrome.runtime.onMessage.addListener((message: Message, _sender, cb) => {
   cb()
 
   if (message.type === MessageType.openPopup) {
