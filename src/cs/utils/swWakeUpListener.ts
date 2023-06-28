@@ -1,4 +1,4 @@
-import { isIframe } from './common'
+import { isIframe, isTabFocused } from './common'
 
 export namespace SwWakeUpListener {
   const TIMEOUT = 2000
@@ -9,7 +9,7 @@ export namespace SwWakeUpListener {
 
       connect.onDisconnect.addListener(() => {
         setTimeout(() => {
-          if (chrome.runtime.id) {
+          if (chrome.runtime.id && isTabFocused()) {
             init()
           }
         }, TIMEOUT)

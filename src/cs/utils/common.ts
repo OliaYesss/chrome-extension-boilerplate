@@ -5,3 +5,7 @@ export function isIframe() {
     return true
   }
 }
+
+export function isTabFocused(): boolean {
+  return !document.hidden
+}

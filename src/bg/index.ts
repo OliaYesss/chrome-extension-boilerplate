@@ -16,3 +16,8 @@ chrome.runtime.onMessage.addListener((message, _sender, cb) => {
     })
   }
 })
+
+// need for wake-up logic
+chrome.runtime.onConnect.addListener((_connection) => {
+  //
+})
