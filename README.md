@@ -3,7 +3,7 @@
 Ultra fast minimalistic Chrome Extensions boilerplate that help you set up your web extension faster!
 
 ## Key features:
-- Automatic extension releod on changes
+- Automatic extension reload on changes
 - Ultra fast build with `esbuild`
 - Sustainable render extension UI in `shadow DOM`
 
